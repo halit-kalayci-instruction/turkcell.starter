@@ -63,18 +63,19 @@ public class Main
         // instance => örnek
         // Constructor => CTOR
         Product product1 = new Product();
-        product1.name = "Laptop";
-        product1.onSale= true;
-        product1.salePercentage= 5;
-        product1.unitPrice= 50;
+        product1.setName("Laptop");
+        product1.setOnSale(true); // write-set
+        product1.setSalePercentage(5);
+        product1.setUnitPrice(50);
         product1.buy();
 
+        System.out.println(product1.getName()); // read-get
 
         Product product2 = new Product();
-        product2.name = "Mouse";
-        product2.onSale= false;
-        product2.salePercentage= 0;
-        product2.unitPrice= 500;
+        product2.setName("Mouse");
+        product2.setOnSale(false);
+        product2.setSalePercentage(0);
+        product2.setUnitPrice(500);
         product2.buy();
 
         Product product3 = new Product("Klavye", 500, false, 0);
