@@ -59,5 +59,25 @@ public class Main
 
         // OOP
         // OOP Concepts
+
+        // instance => örnek
+        // Constructor => CTOR
+        Product product1 = new Product();
+        product1.name = "Laptop";
+        product1.onSale= true;
+        product1.salePercentage= 5;
+        product1.unitPrice= 50;
+        product1.buy();
+
+
+        Product product2 = new Product();
+        product2.name = "Mouse";
+        product2.onSale= false;
+        product2.salePercentage= 0;
+        product2.unitPrice= 500;
+        product2.buy();
+
+        Product product3 = new Product("Klavye", 500, false, 0);
+
     }
 }
