@@ -80,5 +80,14 @@ public class Main
 
         Product product3 = new Product("Klavye", 500, false, 0);
 
+
+        CorporateCustomer corporateCustomer = new CorporateCustomer();
+        IndividualCustomer individualCustomer = new IndividualCustomer();
+
+        corporateCustomer.setCustomerNo("ABC");
+        corporateCustomer.setTaxNo("123");
+
+        individualCustomer.setCustomerNo("GHJ");
+        individualCustomer.setNationalityId("456");
     }
 }
