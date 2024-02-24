@@ -89,5 +89,14 @@ public class Main
 
         individualCustomer.setCustomerNo("GHJ");
         individualCustomer.setNationalityId("456");
+
+        //Customer individualCustomer2 = new IndividualCustomer();
+        CustomerServiceInterface customerService = new CustomerService();
+        customerService.add();
+        customerService.update();
+        customerService.add();
+        customerService.add();
+        customerService.add();
+        customerService.add();
     }
 }
